@@ -14,7 +14,6 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
-
 header {
     display: flex;
     justify-content: space-between;
