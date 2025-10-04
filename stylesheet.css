@@ -1,0 +1,313 @@
+:root {
+    --text: #705835; 
+    --background: #fcfae8; 
+    --primary: #527c4f;
+    --secondary: #e1cf7f;  
+    --accent: #225d7f;    
+    --font-stack: 'Georgia', serif;
+}
+body {
+    font-family: var(--font-stack);
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(252, 250, 232, 0.95);
+    border-bottom: 2px solid var(--secondary);
+    flex-wrap: wrap; 
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-link:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+#hero {
+    background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1887&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    background-color: rgba(252, 250, 232, 0.8);
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.hero-content h2 {
+    color: var(--text);
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(34, 93, 127, 0.4);
+}
+
+#mission-statement, .form-container, .content-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+#mission-statement {
+    text-align: center;
+    border-left: 5px solid var(--primary);
+    line-height: 1.8;
+}
+
+footer {
+    background-color: var(--text);
+    color: var(--background);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.content-container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.content-container p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.about-me-photo {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border: 5px solid var(--secondary);
+}
+
+.table-title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pricing-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pricing-table thead {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #f8f6e7;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: var(--secondary);
+}
+
+.gallery-video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 2px solid var(--secondary);
+    padding-top: 40px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.vendor-list {
+    margin-top: 30px;
+}
+
+.vendor-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid var(--secondary);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.vendor-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+
+.vendor-item h3 {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.vendor-link {
+    text-decoration: none;
+    color: var(--primary);
+    transition: color 0.3s;
+}
+
+.vendor-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.form-container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding */
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+\
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    #mission-statement, .form-container, .content-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .pricing-table th, .pricing-table td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    
+    .about-me-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
