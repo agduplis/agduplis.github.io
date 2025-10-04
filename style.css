@@ -48,7 +48,7 @@ nav {
     color: var(--background);
 }
 #hero {
-    background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1887&auto=format&fit=crop');
+    background-image: url;
     background-size: cover;
     background-position: center;
     min-height: 400px;
