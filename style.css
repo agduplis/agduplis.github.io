@@ -6,6 +6,12 @@
     --accent: #225d7f; 
     --font-stack: 'Georgia', serif;
 }
+
+/* Universal box-sizing for easier layout */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-stack);
     background-color: var(--background);
@@ -13,6 +19,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+}
+
 header {
     background-color: var(--primary);
     color: var(--background); 
@@ -26,10 +34,12 @@ header h1 {
     margin: 0;
     font-size: 1.8em;
 }
+
 header h1 a {
     color: var(--background);
     text-decoration: none;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -48,9 +58,12 @@ nav ul {
 
 .nav-link:hover {
     color: var(--secondary); 
+} /* Fixed missing closing brace here */
+
 main {
     max-width: 960px;
     margin: 0 auto; 
+    /* This padding adds space so content isn't next to the edge */
     padding: 2rem;
 }
 
@@ -67,9 +80,11 @@ main {
     font-size: 2.5em;
     margin-top: 0;
 }
+
 h2, h3 {
     color: var(--primary);
 }
+
 .cta-button {
     display: inline-block;
     background-color: var(--secondary);
@@ -83,23 +98,32 @@ h2, h3 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .cta-button:hover {
     background-color: #d4be6a;
 }
+
+/* Centered the form container */
 .form-container {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Added max-width and margin to center it on the page */
+    max-width: 700px;
+    margin: 2rem auto;
 }
+
 .form-group {
     margin-bottom: 1.5rem;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -109,8 +133,8 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: inherit; 
-    box-sizing: border-box; 
 }
+
 .pricing-table {
     width: 100%;
     border-collapse: collapse; 
@@ -127,10 +151,33 @@ textarea {
     background-color: var(--primary);
     color: var(--background);
 }
+
+/* Styles for the new About Me layout */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem; /* Space between text and image */
+}
+
+.about-text {
+    flex: 2; /* Gives the text more space */
+}
+
+.about-image {
+    flex: 1; /* Gives the image less space */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adds soft rounded corners to the image */
+}
+
+
 footer {
     background-color: var(--text);
     color: var(--background);
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     margin-top: 2rem;
 }
