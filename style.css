@@ -151,7 +151,8 @@ footer {
 }
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0.5px, 1fr));
+    /* Use a reasonable minimum width like 200px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
