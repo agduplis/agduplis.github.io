@@ -158,8 +158,8 @@ footer {
 }
 .gallery-item video,
 .gallery-item img {
-    width: 50%;
-    height: 50%;
+    width: 10%;
+    height: 10%;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
