@@ -58,7 +58,7 @@ nav ul {
 
 .nav-link:hover {
     color: var(--secondary); 
-} /* Fixed missing closing brace here */
+}
 
 main {
     max-width: 960px;
@@ -173,7 +173,6 @@ textarea {
     border-radius: 8px; /* Adds soft rounded corners to the image */
 }
 
-
 footer {
     background-color: var(--text);
     color: var(--background);
@@ -181,3 +180,8 @@ footer {
     padding: 1.5rem 2rem;
     margin-top: 2rem;
 }
+
+/* --- Gallery Page Styles --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
