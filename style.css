@@ -6,12 +6,9 @@
     --accent: #225d7f; 
     --font-stack: 'Georgia', serif;
 }
-
-/* Universal box-sizing for easier layout */
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--font-stack);
     background-color: var(--background);
@@ -20,7 +17,6 @@ body {
     padding: 0;
     line-height: 1.6;
 }
-
 header {
     background-color: var(--primary);
     color: var(--background); 
@@ -29,17 +25,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 header h1 {
     margin: 0;
     font-size: 1.8em;
 }
-
 header h1 a {
     color: var(--background);
     text-decoration: none;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -47,7 +40,6 @@ nav ul {
     display: flex;
     gap: 1.5rem; 
 }
-
 .nav-link {
     color: var(--background);
     text-decoration: none;
@@ -55,18 +47,14 @@ nav ul {
     padding: 0.5rem;
     transition: color 0.3s ease; 
 }
-
 .nav-link:hover {
     color: var(--secondary); 
 }
-
 main {
     max-width: 960px;
     margin: 0 auto; 
-    /* This padding adds space so content isn't next to the edge */
     padding: 2rem;
 }
-
 #hero {
     background-color: var(--accent); 
     color: var(--background);
@@ -75,16 +63,13 @@ main {
     border-radius: 8px;
     margin-bottom: 2rem;
 }
-
 #hero h2 {
     font-size: 2.5em;
     margin-top: 0;
 }
-
 h2, h3 {
     color: var(--primary);
 }
-
 .cta-button {
     display: inline-block;
     background-color: var(--secondary);
@@ -98,32 +83,25 @@ h2, h3 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .cta-button:hover {
     background-color: #d4be6a;
 }
-
-/* Centered the form container */
 .form-container {
     background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    /* Added max-width and margin to center it on the page */
     max-width: 700px;
     margin: 2rem auto;
 }
-
 .form-group {
     margin-bottom: 1.5rem;
 }
-
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -134,45 +112,36 @@ textarea {
     border-radius: 5px;
     font-family: inherit; 
 }
-
 .pricing-table {
     width: 100%;
     border-collapse: collapse; 
     margin-top: 2rem;
 }
-
 .pricing-table th, .pricing-table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-
 .pricing-table thead {
     background-color: var(--primary);
     color: var(--background);
 }
-
-/* Styles for the new About Me layout */
 .about-container {
     display: flex;
     align-items: center;
-    gap: 2.5rem; /* Space between text and image */
+    gap: 2.5rem;
 }
-
 .about-text {
-    flex: 2; /* Gives the text more space */
+    flex: 2;
 }
-
 .about-image {
-    flex: 1; /* Gives the image less space */
+    flex: 1;
 }
-
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Adds soft rounded corners to the image */
+    border-radius: 8px; 
 }
-
 footer {
     background-color: var(--text);
     color: var(--background);
@@ -180,8 +149,9 @@ footer {
     padding: 1.5rem 2rem;
     margin-top: 2rem;
 }
-
-/* --- Gallery Page Styles --- */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
