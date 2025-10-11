@@ -153,7 +153,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    max-width: 200px;
+    max-width: 550px;
     margin: 2rem auto;
 }
 .gallery-item video,
