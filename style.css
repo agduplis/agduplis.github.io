@@ -151,10 +151,11 @@ footer {
 }
 .gallery-grid {
     display: grid;
-    /* This creates the fixed 2-column layout */
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    margin-top: 2rem;
+    max-width: 750px;
+    margin: 2rem auto;
+}
 }
 .gallery-item video,
 .gallery-item img {
