@@ -149,16 +149,13 @@ footer {
     padding: 1.5rem 2rem;
     margin-top: 2rem;
 }
-
-/* --- Gallery Page Styles (Cleaned Up) --- */
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    max-width: 750px;
+    max-width: 100px;
     margin: 2rem auto;
 }
-
 .gallery-item video,
 .gallery-item img {
     width: 100%;
@@ -167,15 +164,12 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
-/* --- Vendor Page Styles --- */
 .vendor-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-top: 2rem;
 }
-
 .vendor-card {
     background-color: #fff;
     padding: 2rem;
@@ -183,14 +177,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
-
 .vendor-logo {
     max-width: 180px;
     height: auto;
     margin-bottom: 1rem;
 }
-
-/* Make vendor grid two columns on larger screens */
 @media (min-width: 768px) {
     .vendor-list {
         grid-template-columns: 1fr 1fr;
