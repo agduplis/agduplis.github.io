@@ -151,8 +151,8 @@ footer {
 }
 .gallery-grid {
     display: grid;
-    /* Use a reasonable minimum width like 200px */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* This creates the fixed 2-column layout */
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
 }
